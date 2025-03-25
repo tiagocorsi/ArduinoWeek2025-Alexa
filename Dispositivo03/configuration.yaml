@@ -1,0 +1,37 @@
+/*
+ Name:		configuration.yaml
+ Created:	25/03/2025
+ Author:	Tiago H. Corsi
+ Comments:  Exemplo criado para a palestra Arduino Week 2025
+*/
+
+(...)
+mqtt:
+  light:
+    - name: "Luz Led Amarelo"
+      state_topic: "luz/led_amarelo/state"
+      command_topic: "luz/led_amarelo/switch"
+      unique_id: "luz_led_amarelo"
+      payload_on: "ON"
+      payload_off: "OFF"
+
+    - name: "Luz Led Verde"
+      state_topic: "luz/led_verde/state"
+      command_topic: "luz/led_verde/switch"
+      unique_id: "luz_led_verde"
+      payload_on: "ON"
+      payload_off: "OFF"
+
+    - name: Luz Led Vermelho
+      state_topic: "luz/led_vermelho/state"
+      command_topic: "luz/led_vermelho/switch"
+      unique_id: "luz_led_vermelho"
+      payload_on: "ON"
+      payload_off: "OFF"
+
+  sensor:
+    - name: "Temperatura Escritório"
+      state_topic: "temperatura/escritorio/state"
+      device_class: "temperature"
+      unique_id: "temperatura_escritorio"
+      unit_of_measurement: "°C"
